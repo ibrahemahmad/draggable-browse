@@ -17,9 +17,9 @@ const ImageShow = ({ file, handleDeleteFile, index }: Props) => {
         className="each-images"
         alt="FILE...."
         width={'50px'}
-        src={file}
+        src={URL.createObjectURL(file)}
         onLoad={() => {
-          file;
+          return file;
         }}
       />
     </div>
