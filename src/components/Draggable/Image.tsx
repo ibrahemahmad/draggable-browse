@@ -17,7 +17,7 @@ const ImageShow = ({ file, handleDeleteFile, index }: Props) => {
         className="each-images"
         alt="FILE...."
         width={'50px'}
-        src={URL.createObjectURL(file)}
+        src={window.URL.createObjectURL(new Blob(file, { type: file['type'] }))}
         onLoad={() => {
           return file;
         }}
