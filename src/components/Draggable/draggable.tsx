@@ -1,5 +1,5 @@
 import React, { ReactNode, useRef, useState } from 'react'
-import { ImageShow } from './Image'
+import ImageShow from './Image'
 import './draggableStyle.css'
 type Props = {
   onFileSelected: (listFile: Array<any>) => void
