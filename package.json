@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "author": "ibrahem ahmad (ibrahemahmad)",
@@ -36,7 +36,6 @@
     "trailingComma": "es5"
   },
   "name": "draggable-browse",
-  "author": "Ibrahem ahmad",
   "module": "dist/draggable-browse.esm.js",
   "size-limit": [
     {
