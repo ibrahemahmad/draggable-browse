@@ -39,6 +39,36 @@ To use the package you must first add the it to your dependencies in your projec
 $ npm i draggable-browse
 ```
 
+## How to use
+
+for use this package in any screen you should import the package and css file like this :
+
+```bash
+import { DragDropFile } from 'draggable-browse';
+import './../node_modules/draggable-browse/dist/draggable-browse.cjs.development.css'
+
+```
+```html
+<DragDropFile
+        hasBrowseButton={true}
+        multiple={true}
+        acceptDublicate={false}
+        
+        style={{
+          color: 'red',
+          minWidth: '14rem',
+          width: '10rem',
+          height: '14rem',
+        }}
+        accept="*"
+        onFileSelected={listFile => {
+          console.log('files', listFile);
+        }}
+        buttonText="browse file"
+      />
+```
+
+
 Then you have to register the package in your project as well as import a necessary css file that comes with the package.
 
 ## Author
